@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promptly</title>
+    <link rel="icon" href="Images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script
+        src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.14/dist/dotlottie-wc.js"
+        type="module">
+    </script>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="ai-chat-box">
+            <img src="Images/ai.png" alt="AI" id="aiImage">
+            <div class="ai-chat-area">
+                Hello! How can I help you today?
+            </div>
+        </div>
+    </div>
+
+    <div class="prompt-area">
+        <input type="text" id="prompt" placeholder="Message...">
+        <button id="image">
+            <img src="img.svg" alt="Upload image">
+            <input type="file" accept="image/*" hidden>
+        </button>
+        <button id="submit">
+            <img src="submit.svg" alt="Send">
+        </button>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
